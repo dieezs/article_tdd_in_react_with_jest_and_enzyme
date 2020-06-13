@@ -50,11 +50,12 @@ describe('Testando Contador', () => {
         expect(counter).toBe("1");
     })
 
-    it('test mount and render', () => {
+    it('shallow, mount and render', () => {
         const testeShallow = shallow(<Contador/>)
         const testeMount = mount(<Contador/>)
         const testeRender = render(<Contador/>)
-        console.log(testeRender.debug());
+
+        console.log(testeMount.debug());
     })
 
 })
